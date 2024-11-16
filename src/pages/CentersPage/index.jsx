@@ -1,45 +1,39 @@
-import React from 'react'
+import React from 'react';
 import { useState, useEffect } from 'react';
-import {Link, Outlet} from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom';
+import { CenterDetail } from '../CenterDetail/index';
 
 export const CentersPage = () => {
-  const [centers, setCenters] = useState([]);
+  const [center, setCenter] = useState([]);
 
   useEffect(() => {
-    const fetchCenters = async () => {
+    const fetchCenter = async () => {
       const response = await fetch('http://localhost:4000/api/centers');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
       const data = await response.json();
-      setCenters(data);
-      console.log(data);
+      setCenter(data);
+      console.log(data)
+      
     };
 
-    fetchCenters();
+    fetchCenter();
   }, []);
 
-  if (centers.length === null) {
+  if (center === null) {
     return <p>Loading ...</p>;
   }
 
   return (
-    <div className="all-centers">
-      {' '}
-      <h1>Pobočky</h1>{' '}
-      <ul>
-        {' '}
-        {centers.map((center) => (
-          <li key={center.id}>
-            {' '}
-            <Link to={`/pobocky/${center.id}`}>
-              {' '}
-              <h2>{center.name}</h2> <p>{center.address}</p>{' '}
-            </Link>{' '}
-          </li>
-        ))}{' '}
-      </ul>{' '}
-      <Outlet />{' '}
-    </div>
+    <section>
+      <div className="all-centers">
+        <h1>Pobočky</h1>
+        {center.map((center) => (
+          <div key={center.id} className="center">
+            <h2> <Link to={`/pobočky/${center.id}`}>{center.name}</Link></h2>
+            <p>{center.address}</p>
+          </div>
+        ))}
+        <Outlet />
+      </div>
+    </section>
   );
 };

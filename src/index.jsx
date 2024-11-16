@@ -9,6 +9,7 @@ import { CentersPage } from './pages/CentersPage/index';
 import { Contact } from './pages/Contact';
 import './global.css';
 
+
 const App = () => {
   return (
     <div>
@@ -48,6 +49,13 @@ const routerWithChildren = createBrowserRouter([
     ],
   },
 ]);
+
+<createBrowserRouter
+  future={{
+    v7_relativeSplatPath: true,
+  }}
+/>;
+
 
 createRoot(document.querySelector('#app')).render(
   <RouterProvider router={routerWithChildren} />);
