@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 import {About } from './pages/About';
 import {ErrorPage} from './pages/ErrorPage';
 import { CentersPage } from './pages/CentersPage/index';
+import { CenterDetail } from '../CenterDetail/index';
 import { Contact } from './pages/Contact';
 import './global.css';
 
@@ -27,7 +28,7 @@ const App = () => {
   );
 };
 
-const routerWithChildren = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
@@ -41,6 +42,12 @@ const routerWithChildren = createBrowserRouter([
       {
         path: 'center',
         element: <CentersPage />,
+        children: [
+          {
+            path: ': id',
+            element: <CenterDetail />
+          }
+        ]
       },
       {
         path: 'contact',
@@ -58,4 +65,4 @@ const routerWithChildren = createBrowserRouter([
 
 
 createRoot(document.querySelector('#app')).render(
-  <RouterProvider router={routerWithChildren} />);
+  <RouterProvider router={router} />);

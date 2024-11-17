@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { CenterDetail } from '../CenterDetail/index';
 
 export const CentersPage = () => {
   const [center, setCenter] = useState([]);
@@ -9,9 +8,10 @@ export const CentersPage = () => {
   useEffect(() => {
     const fetchCenter = async () => {
       const response = await fetch('http://localhost:4000/api/centers');
-      const data = await response.json();
-      setCenter(data);
-      console.log(data)
+      const json = await response.json();
+      const data = json.data
+      setCenter(data.data);
+      console.log(data.data)
       
     };
 
@@ -26,13 +26,13 @@ export const CentersPage = () => {
     <section>
       <div className="all-centers">
         <h1>Pobočky</h1>
-        {center.map((center) => (
+        {center.map(center => (
           <div key={center.id} className="center">
-            <h2> <Link to={`/pobočky/${center.id}`}>{center.name}</Link></h2>
+            <h2> <Link to={`${center.id}`}>{center.name}</Link></h2>
             <p>{center.address}</p>
           </div>
         ))}
-        <Outlet />
+        <Outlet context={[center]} />
       </div>
     </section>
   );
