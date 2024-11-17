@@ -8,8 +8,18 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(images/v661-tk-09-watercolorpattern.jpg);
+  color: rgb(91, 3, 91);
+}
+
 .container {
   max-width: 26rem;
   margin-right: auto;
   margin-left: auto;
 }
+
+

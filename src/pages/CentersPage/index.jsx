@@ -9,9 +9,8 @@ export const CentersPage = () => {
     const fetchCenter = async () => {
       const response = await fetch('http://localhost:4000/api/centers');
       const json = await response.json();
-      const data = json.data;
-      setCenter(data.data);
-      console.log(data.data);
+      setCenter(json.data);
+      console.log(json.data);
       
     };
 
