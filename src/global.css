@@ -9,17 +9,37 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 50px;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(images/v661-tk-09-watercolorpattern.jpg);
-  color: rgb(91, 3, 91);
+  background-color: floralwhite;
+  color: #3a681a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2{
+
+      align-items: center;
+      color: #3a681a;
+}
+
+p{
+  color: black;
+}
+
+
 
 .container {
   max-width: 26rem;
   margin-right: auto;
   margin-left: auto;
 }
-
-

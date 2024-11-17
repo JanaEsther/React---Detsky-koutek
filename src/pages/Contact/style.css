@@ -1,2 +1,50 @@
+body {
+  background-color: floralwhite;
+  color: black;
+  font-family: Arial, sans-serif;
+}
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #3a681a;
+}
+
+.form-example {
+  margin-bottom: 20px;
+}
+
+.form-example label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-example input[type="text"],
+.form-example input[type="email"],
+.form-example textarea {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #3a681a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: black;
+}
 

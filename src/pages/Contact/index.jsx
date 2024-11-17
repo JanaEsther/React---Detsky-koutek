@@ -8,12 +8,11 @@ export const Contact = () => {
       <p>
         Pokud máte jakékoliv otázky, nápady nebo nám chcete prostě jen napsat,
         zanechte nám zprávu přes náš kontaktní formulář a my se vám co nejdříve
-        ozveme.{' '}
-      </p>
-      <p>
-        Pokud preferujete jiný způsob komunikace, můžete nám také napsat e-mail
-        na adresu: info@detskykoutek.cz nebo nás kontaktovat přes naše sociální
-        sítě. Děkujeme vám za vaši zpětnou vazbu a těšíme se na vaše zprávy!
+        ozveme.
+        <br />
+        Můžete nám také napsat e-mail na adresu: info@detskykoutek.cz nebo nás kontaktovat přes naše sociální
+        sítě. <br />
+        Děkujeme vám za vaši zpětnou vazbu a těšíme se na vaše zprávy!
       </p>
 
       <h2>Zanechte nám zprávu</h2>
@@ -45,8 +44,8 @@ export const Contact = () => {
           <input type="text" name="surname" id="surname" />
         </div>
         <div className="form-example">
-          <button className="button" type="submit" value="Odeslat" />
-        </div>
+          <button className="button" type="submit" value="Odeslat">Odeslat</button>
+          </div>
       </form>
     </section>
   );
