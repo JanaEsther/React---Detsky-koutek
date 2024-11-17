@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         element: <CentersPage />,
         children: [
           {
-            path: ': id',
+            path: ':id',
             element: <CenterDetail />
           }
         ]
