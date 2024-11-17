@@ -6,7 +6,7 @@ import { HomePage } from './pages/HomePage';
 import {About } from './pages/About';
 import {ErrorPage} from './pages/ErrorPage';
 import { CentersPage } from './pages/CentersPage/index';
-import { CenterDetail } from '../CenterDetail/index';
+import { CenterDetail } from './pages/CenterDetail/index';
 import { Contact } from './pages/Contact';
 import './global.css';
 
