@@ -13,7 +13,7 @@ export const CenterDetail = () => {
     return <p>Pobočka nenalezena!</p>;
   }
 
-  const { address, phone, email, capacity, open, info } = pobocka;
+  const { address, phone, email, capacity, open, info, mapy } = pobocka;
   console.log(pobocka)
 
   return (
@@ -41,6 +41,12 @@ export const CenterDetail = () => {
       <p className="open">Sobota: {open.sat ? open.sat : 'Closed'}</p>
       <p className="open">Neděle: {open.sun ? open.sun : 'Closed'}</p>
       <p>Informace: {info}</p>
+      <iframe
+        src={`https://frame.mapy.cz/s/${mapy}`}
+        width="100%"
+        height="280"
+        frame="0"
+      ></iframe>
       <Link to="/center">Zpět na všechny pobočky</Link>
     </section>
   );

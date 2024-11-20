@@ -17,9 +17,7 @@ export const HomePage = () => {
           překvapení!
         </p>
       </main>
-      <footer>
-        <p>© 2024 Dětský svět o.p.s.</p>
-      </footer>
+
     </div>
   );
 };

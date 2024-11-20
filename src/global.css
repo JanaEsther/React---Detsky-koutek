@@ -12,7 +12,7 @@ body {
   margin: 0 50px;
   padding: 0;
   box-sizing: border-box;
-  background-color: floralwhite;
+  background-color:cornsilk;
   color: #3a681a;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -26,7 +26,7 @@ code {
     monospace;
 }
 
-h1,h2{
+h1,h2,h3{
 
       align-items: center;
       color: #3a681a;
@@ -43,3 +43,5 @@ p{
   margin-right: auto;
   margin-left: auto;
 }
+
+
