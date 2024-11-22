@@ -7,7 +7,7 @@ export const CenterDetail = () => {
   
   const [center] = useOutletContext();
   let pobocka = center[id]
-
+  
 
   if (!center[id]) {
     return <p>Pobočka nenalezena!</p>;
@@ -43,11 +43,14 @@ export const CenterDetail = () => {
       <p>Informace: {info}</p>
       <iframe
         src={`https://frame.mapy.cz/s/${mapy}`}
-        width="100%"
+        width="80%"
         height="280"
-        frame="0"
+        frameborder="0"
+        title="Mapa pobočky"
       ></iframe>
-      <Link to="/center">Zpět na všechny pobočky</Link>
+      <button className="button">
+        <Link to="/center">Zpět na všechny pobočky</Link>
+      </button>
     </section>
   );
 };

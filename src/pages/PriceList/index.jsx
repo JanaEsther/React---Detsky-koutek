@@ -1,7 +1,7 @@
 import Table from 'react-bootstrap/Table';
-import './style.css'
+import './style.css';
 
-import React from 'react'
+import React from 'react';
 
 const PriceList = () => {
   return (
@@ -26,12 +26,12 @@ const PriceList = () => {
           </tr>
         </tbody>
       </Table>
-      <p class="text">
+      <p className="text">
         Vstupné je časově neomezené a během daného dne je možné koutek navštívit
         opakovaně.
       </p>
     </div>
   );
-}
+};
 
-export default PriceList
+export default PriceList;
