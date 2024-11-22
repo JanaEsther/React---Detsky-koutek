@@ -18,21 +18,32 @@ export const About = () => {
         nového naučit. Doufáme, že se k nám vydáte a budete s námi sdílet své
         zážitky a nápady na další aktivity!
       </p>
+      <p>
+        V koutku dominují pastelové barvy, přednost dostaly dřevěné edukativní
+        hračky a celkový prostor tak působí klidně a útulně. Kromě dřevěných
+        hraček můžeme nabídnout pracovní stůl na ruční práce, ponk s nářadím pro
+        kluky, kočárky a panenky pro holčičky, dále TV box, oblíbený bazének s
+        kuličkami a skluzavkou. Pro malé i velké tablet zónu. Pro děti máme
+        připraven každodenní program formou výtvarných, pohybových, hudebních či
+        soutěžních aktivit. Dětem je v koutku poskytováno základní hygienické
+        ošetření dle potřeby. Pro maminky nejmenších je připraven přebalovací
+        pult a veškeré hygienické potřeby.
+      </p>
+      <p>
+        <b>
+          Pobyt v dětském koutku je z hygienických důvodů možný pouze v
+          ponožkách. Platba pouze v hotovosti. Platební karty nepřijímáme.
+        </b>
+      </p>
       <h3>Jak to u nás vypadá</h3>
-      <Container>
-        <Row>
-          <Col xs={3} md={2}>
-            <Image src="images/" rounded />
-          </Col>
-          <Col xs={6} md={4}>
-            <Image src="holder.js/171x180" rounded />
-          </Col>
-          <Col xs={6} md={4}>
-            <Image src="holder.js/171x180" rounded />
-          </Col>
-        </Row>
+      <Container className="photo-container">
+        <Image className="image" src="images/koutek1.jpeg" />
+
+        <Image className="image" src="images/koutek2.jpg" />
+
+        <Image className="image" src="images/koutek3.jpg" />
       </Container>
-      <h3>Náš tým</h3>
+   
     </div>
   );
 };
