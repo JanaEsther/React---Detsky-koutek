@@ -6,7 +6,7 @@ export const CenterDetail = () => {
   const {id} = useParams();
   
   const [center] = useOutletContext();
-  let pobocka = center[id]
+   let pobocka = center.find((c) => c.id === parseInt(id, 10));
   
 
   if (!center[id]) {
@@ -42,11 +42,10 @@ export const CenterDetail = () => {
       <p className="open">Neděle: {open.sun ? open.sun : 'Closed'}</p>
       <p>Informace: {info}</p>
       <iframe
+        style={{ border: 'none' }}
         src={`https://frame.mapy.cz/s/${mapy}`}
-        width="80%"
+        width="600"
         height="280"
-        frameborder="0"
-        title="Mapa pobočky"
       ></iframe>
       <button className="button">
         <Link to="/center">Zpět na všechny pobočky</Link>

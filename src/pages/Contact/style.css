@@ -24,6 +24,7 @@ h2 {
 
 .form-example input[type="text"],
 .form-example input[type="email"],
+.form-example input[type="tel"],
 .form-example textarea {
   width: 20%;
   padding: 8px;
@@ -38,9 +39,9 @@ h2 {
   display:block;
   background-color: #3a681a;
   border: none;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 80px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 4px;
   cursor: pointer;
   
