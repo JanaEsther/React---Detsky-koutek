@@ -22,7 +22,7 @@ export const CentersPage = () => {
   }
 
   return (
-    <section>
+    <section className="centers__box">
       <div className="all-centers">
         <h1>Pobočky</h1>
         {center.map((center) => (
@@ -34,7 +34,9 @@ export const CentersPage = () => {
           </div>
         ))}
       </div>
-      <Outlet context={[center]} />
+      <div className="one__center">
+        <Outlet context={[center]} />
+      </div>
     </section>
   );
 };

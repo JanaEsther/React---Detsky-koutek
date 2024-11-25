@@ -1,0 +1,17 @@
+
+.centers__box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} 
+
+.one__center{
+   flex: 0 0 100px;
+   justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.all-centers{
+  margin-right: 60px;
+ 
+}
