@@ -18,6 +18,12 @@ export const CenterDetail = () => {
 
   return (
     <section className="one-center-more">
+      <iframe
+        style={{ border: 'none' }}
+        src={`https://frame.mapy.cz/s/${mapy}`}
+        width="600"
+        height="350"
+      ></iframe>
       <p>
         <strong>Adresa:</strong> {address}
       </p>
@@ -41,12 +47,7 @@ export const CenterDetail = () => {
       <p className="open">Sobota: {open.sat ? open.sat : 'Closed'}</p>
       <p className="open">Neděle: {open.sun ? open.sun : 'Closed'}</p>
       <p>Informace: {info}</p>
-      <iframe
-        style={{ border: 'none' }}
-        src={`https://frame.mapy.cz/s/${mapy}`}
-        width="600"
-        height="280"
-      ></iframe>
+
       <button className="button">
         <Link to="/center">Zpět na všechny pobočky</Link>
       </button>
